@@ -1,0 +1,82 @@
+/* MEDIA QUERIES MENÚ*/
+
+@media (max-width: 800px) {
+  .nav-list {
+    display: none;
+  }
+
+  .nav-menu {
+    display: block;
+  }
+
+  .hero-main {
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content max-content;
+    text-align: center;
+  }
+
+  .hero-picture {
+    grid-row: 1/2;
+  }
+
+  .hero-img {
+    max-width: 500px;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+/* MEDIA QUERIES BALONMANO*/
+
+@media (max-width: 800px) {
+  .grid-preTemporada {
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content max-content max-content;
+    text-align: center;
+    margin-left: 80px;
+  }
+
+  .preTemporada-femenino {
+    margin-top: 30px;
+  }
+  .preTemporada-masculino {
+    margin-top: 30px;
+  }
+}
+
+/* MEDIA QUERIES QUIENES SOMOS*/
+
+@media (max-width: 800px) {
+  .checho {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .checho-img {
+    max-width: 500px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .ramiMolina {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .rami-img {
+    max-width: 500px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .caroTofino {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .caro-img {
+    max-width: 500px;
+    display: block;
+    margin: 0 auto;
+  }
+}

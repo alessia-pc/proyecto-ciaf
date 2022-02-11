@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Lato:ital@1&family=Rubik&family=Rubik+Mono+One&family=Urbanist:wght@300;400;500;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Inter:wght@500&family=Lato:ital@1&family=Rubik&family=Rubik+Mono+One&family=Urbanist:wght@300;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Urbanist", sans-serif;
+  background-image: linear-gradient(to top, #a3bded 0%, #6991c7 100%);
+  color: white;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.hero {
+  background-image: linear-gradient(
+    -225deg,
+    #3d4e81 0%,
+    #5753c9 48%,
+    #6e7ff3 100%
+  );
+  color: #fff;
+  display: grid;
+  grid-template-rows: max-content 1fr;
+  grid-template-areas:
+    "nav"
+    "content";
+  min-height: 100vh;
+}
+
+.nav {
+  grid-area: nav;
+  display: grid;
+  justify-content: space-between;
+  grid-auto-flow: column;
+  gap: 1em;
+  align-items: center;
+  height: 90px;
+}
+
+.nav-item :hover {
+  text-decoration: underline 1px rgb(255, 255, 255);
+}
+
+.nav-list {
+  list-style: none;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 1em;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-logo {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.nav-menu {
+  display: none;
+}
+
+.nav-icon {
+  width: 30px;
+}
+
+.hero-main {
+  grid-area: content;
+  display: grid;
+  gap: 2em;
+  /*grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));*/
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding-bottom: 180px;
+}
+
+.hero-waves {
+  grid-area: content;
+  align-self: end;
+}
+
+.hero-title {
+  font-size: 2.6rem;
+  letter-spacing: 2px;
+}
+
+.hero-subtitle {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.hero-img {
+  margin-left: 120px;
+}
+
+/*CONTENIDO DE LA WEB*/
+
+.balonMano,
+.natacion,
+.crossfit,
+.quienesSomos,
+.contactanos {
+  text-align: center;
+}
+
+.datosCiaf {
+  text-align: center;
+  background-color: #101f3b;
+  color: #fff;
+  height: 250px;
+  position: relative;
+}
+
+.datosCiaf-hijo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title-ubicacion {
+  margin-bottom: 20px;
+}
+
+.img-preTemporada {
+  border-radius: 10px;
+  box-shadow: 0px 20px 25px -10px rgba(0, 0, 0, 0.5);
+}
+
+.grid-preTemporada {
+  margin: 0 10%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.preTemporada-menores,
+.preTemporada-femenino,
+.preTemporada-masculino {
+  background-color: #fff;
+  width: 330px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: black;
+  box-shadow: 0px 20px 25px -10px rgba(0, 0, 0, 0.5);
+}
+
+.title-balonMano {
+  margin-top: 50px;
+}
+
+.checho-img {
+  border-radius: 4px;
+  width: 300px;
+}
+
+.rami-img {
+  border-radius: 4px;
+  width: 270px;
+}
+
+.caro-img {
+  border-radius: 4px;
+  width: 300px;
+}
+
+.checho {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.ramiMolina {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.caroTofino {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
